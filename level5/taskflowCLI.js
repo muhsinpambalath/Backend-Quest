@@ -28,7 +28,7 @@ function addTask(n){
                 name: task
             }
             tasks.push(taskObj);
-            fs.appendFileSync("notes.txt",`${tasks.length}. ${task}\n`);
+            fs.writeFileSync("notes.txt",`${tasks.length}. ${task}\n`);
             n--;
             addTask(n);
         });

@@ -66,3 +66,9 @@ egs:
     - Stands for Read Line.
     - It allows Node.js programs to communicate with the user through the terminal.
     - It creates an interface that can ask questions and receive user input.
+
+    -Syntax for crreating an interface: 
+        const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+        });
